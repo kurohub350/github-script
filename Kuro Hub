@@ -1,0 +1,714 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "JUJUTSU LEGACY || KURO HUB",
+   LoadingTitle = "JUJUTSU LEGACY",
+   LoadingSubtitle = "YT : @Kurogane",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "KURO HUB"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Key | Kuro Hub",
+      Subtitle = "Key System",
+      Note = "Key In Discord Server",
+      FileName = "Key || Kuro Hub", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"hii"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("Players", nil) -- Title, Image
+
+Rayfield:Notify({
+   Title = "Script Running",
+   Content = "Thanks For Using Script",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local TPTab = Window:CreateTab("Clans Spinner", nil) -- Title, Image
+
+local Button1 = TPTab:CreateButton({
+   Name = "Itadori",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Itadori",
+    [2] = "Itadori",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button2 = TPTab:CreateButton({
+   Name = "Todo",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Todo",
+    [2] = "Todo",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button3 = TPTab:CreateButton({
+   Name = "Nanami",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Nanami",
+    [2] = "Nanami",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button4 = TPTab:CreateButton({
+   Name = "Geto",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Geto",
+    [2] = "Geto",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button5 = TPTab:CreateButton({
+   Name = "Kamo",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Kamo",
+    [2] = "Kamo",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button6 = TPTab:CreateButton({
+   Name = "Zenin",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Zenin",
+    [2] = "Zenin",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button7 = TPTab:CreateButton({
+   Name = "Okkotsu",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Okkotsu",
+    [2] = "Okkotsu",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button8 = TPTab:CreateButton({
+   Name = "Fushiguro",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Fushiguro",
+    [2] = "Fushiguro",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button9 = TPTab:CreateButton({
+   Name = "Gojo",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Gojo",
+    [2] = "Gojo",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button10 = TPTab:CreateButton({
+   Name = "Rejected Zenin",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Rejected Zenin",
+    [2] = "Rejected Zenin",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local Button11 = TPTab:CreateButton({
+   Name = "Ryomen",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Ryomen",
+    [2] = "Ryomen",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetClan"):FireServer(unpack(args))
+   end,
+})
+
+local TPTab = Window:CreateTab("Spinnables Races", nil) -- Title, Image
+
+local Button1 = TPTab:CreateButton({
+   Name = "Human",
+   Callback = function()
+        --Teleport1
+        local args = {
+    [1] = "Human",
+    [2] = "Human",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetRace"):FireServer(unpack(args))
+   end,
+})
+
+local Button2 = TPTab:CreateButton({
+   Name = "Death Painting",
+   Callback = function()
+        --Teleport2
+        local args = {
+    [1] = "Death Painting",
+    [2] = "Death Painting",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetRace"):FireServer(unpack(args))
+   end,
+})
+
+local Button3 = TPTab:CreateButton({
+   Name = "Curse",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Curse",
+    [2] = "Curse",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetRace"):FireServer(unpack(args))
+   end,
+})
+
+local Button4 = TPTab:CreateButton({
+   Name = "Angel",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Angel",
+    [2] = "Angel",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetRace"):FireServer(unpack(args))
+   end,
+})
+
+local Button5 = TPTab:CreateButton({
+   Name = "Fallen Angel",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Fallen Angel",
+    [2] = "Fallen Angel",
+    [3] = 1,
+    [4] = 0.05
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetRace"):FireServer(unpack(args))
+   end,
+})
+
+local TPTab = Window:CreateTab("Curse Techniques Spinner", nil) -- Title, Image
+
+local Button1 = TPTab:CreateButton({
+   Name = "Ratio",
+   Callback = function()
+        --Teleport3
+local args = {
+    [1] = "Ratio",
+    [2] = "Ratio",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button2 = TPTab:CreateButton({
+   Name = "Comedian",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Comedian",
+    [2] = "Comedian",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button3 = TPTab:CreateButton({
+   Name = "Heavenly Restriction",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Heavenly Restriction",
+    [2] = "Heavenly Restriction",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button4 = TPTab:CreateButton({
+   Name = "Disaster Flames",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Disaster Flames",
+    [2] = "Disaster Flames",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button5 = TPTab:CreateButton({
+   Name = "Divergent Fist",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Divergent Fist",
+    [2] = "Divergent Fist",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button6 = TPTab:CreateButton({
+   Name = "Cursed Speech",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Cursed Speech",
+    [2] = "Cursed Speech",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button7 = TPTab:CreateButton({
+   Name = "Boogie Woogie",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Boogie Woogie",
+    [2] = "Boogie Woogie",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button8 = TPTab:CreateButton({
+   Name = "Sound Amplification",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Sound Amplification",
+    [2] = "Sound Amplification",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button9 = TPTab:CreateButton({
+   Name = "Blast Energy",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Blast Energy",
+    [2] = "Blast Energy",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button10 = TPTab:CreateButton({
+   Name = "Straw Doll",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Straw Doll",
+    [2] = "Straw Doll",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button11 = TPTab:CreateButton({
+   Name = "Moon Dregs",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Moon Dregs",
+    [2] = "Moon Dregs",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button12 = TPTab:CreateButton({
+   Name = "Star Rage",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Star Rage",
+    [2] = "Star Rage",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button13 = TPTab:CreateButton({
+   Name = "Jackpot",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Jackpot",
+    [2] = "Jackpot",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button14 = TPTab:CreateButton({
+   Name = "Deadly Sentencing",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Deadly Sentencing",
+    [2] = "Deadly Sentencing",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button15 = TPTab:CreateButton({
+   Name = "Projection",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Projection",
+    [2] = "Projection",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button16 = TPTab:CreateButton({
+   Name = "Blood Manipulation",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Blood Manipulation",
+    [2] = "Blood Manipulation",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button17 = TPTab:CreateButton({
+   Name = "Disaster Tides",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Disaster Tides",
+    [2] = "Disaster Tides",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button18 = TPTab:CreateButton({
+   Name = "Ice Formation",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Ice Formation",
+    [2] = "Ice Formation",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button19 = TPTab:CreateButton({
+   Name = "Anti Gravity",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Anti Gravity",
+    [2] = "Anti Gravity",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button20 = TPTab:CreateButton({
+   Name = "Rika",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Rika",
+    [2] = "Rika",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button21 = TPTab:CreateButton({
+   Name = "Curse Manipulation",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Curse Manipulation",
+    [2] = "Curse Manipulation",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button21 = TPTab:CreateButton({
+   Name = "Ten Shadows",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Ten Shadows",
+    [2] = "Ten Shadows",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button21 = TPTab:CreateButton({
+   Name = "Infinity",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Infinity",
+    [2] = "Infinity",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local Button21 = TPTab:CreateButton({
+   Name = "Idle Transfiguration",
+   Callback = function()
+        --Teleport3
+        local args = {
+    [1] = "Idle Transfiguration",
+    [2] = "Idle Transfiguration",
+    [3] = 1,
+    [4] = 0.2
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("SetTechnique"):FireServer(unpack(args))
+   end,
+})
+
+local MainSection = MainTab:CreateSection("Settings")
+local Button = MainTab:CreateButton({
+   Name = "Infinite Jump Toggle",
+   Callback = function()
+       --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = true
+	
+	--Notifies readiness
+	game.StarterGui:SetCore("SendNotification", {Title="Kuro Hub"; Text="Infinite Jump Activated!"; Duration=5;})
+
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
+   end,
+})
+
+local Slider = MainTab:CreateSlider({
+   Name = "JumpPower Slider",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderjp", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+   end,
+})
+
+local Slider = MainTab:CreateSlider({
+   Name = "WalkSpeed Slider",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderws", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
+
+local Input = MainTab:CreateInput({
+   Name = "Walkspeed",
+   PlaceholderText = "1-500",
+   RemoveTextAfterFocusLost = true,
+   Callback = function(Text)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Text)
+   end,
+})
